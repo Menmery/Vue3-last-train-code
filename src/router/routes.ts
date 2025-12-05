@@ -12,7 +12,8 @@ export const constantRoutes = [
     name: 'Login',
     meta: {
       title: '登录', //菜单标题
-      hidden: true, //是否在菜单中隐藏
+      hidden: false, //是否在菜单中隐藏
+      icon: 'Promotion',
     },
   },
   {
@@ -22,6 +23,7 @@ export const constantRoutes = [
     meta: {
       title: 'Layout', //菜单标题
       hidden: false,
+      icon: 'Avatar',
     },
     children: [
       {
@@ -30,6 +32,7 @@ export const constantRoutes = [
         meta: {
           title: '首页', //菜单标题
           hidden: false,
+          icon: 'HomeFilled',
         },
       },
     ],
@@ -40,7 +43,7 @@ export const constantRoutes = [
     name: '404',
     meta: {
       title: '404', //菜单标题
-      hidden: true,
+      hidden: false,
     },
   },
   {
@@ -49,7 +52,7 @@ export const constantRoutes = [
     name: 'Any',
     meta: {
       title: '任意路由', //菜单标题
-      hidden: true,
+      hidden: false,
     },
   },
 ]

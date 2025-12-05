@@ -4,7 +4,7 @@
     <template v-if="!item.children">
       <el-menu-item v-if="!item.meta.hidden" :index="item.path">
         <template #title>
-          <span>标&nbsp;</span>
+          <component :is="item.meta.icon"></component>
           <span>{{ item.meta.title }}</span>
         </template>
       </el-menu-item>
